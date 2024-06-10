@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+</head>
+<body>
+    <div class="login-page-container">
+        <div class="login-container">
+            
+            <form id="onSubmitForm">
+                <h1 class="heading">Virtual keyboard</h1>
+                <label for="usernameId" class="label">USERNAME</label>
+                <br>
+                <input id="usernameId" type="text" class="input" placeholder="Enter the Username" />
+                <button id="usernameNoBtn" class="icon-btn"><i class="icon fas fa-keyboard"></i></button>
+                <br>
+                <div class="keyboard" id="virtualKeyboardUsername">
+                    <div class="row">
+                        <div class="key" onclick="addChar('1')">1</div>
+                        <div class="key" onclick="addChar('2')">2</div>
+                        <div class="key" onclick="addChar('3')">3</div>
+                        <div class="key" onclick="addChar('4')">4</div>
+                        <div class="key" onclick="addChar('5')">5</div>
+                        <div class="key" onclick="addChar('6')">6</div>
+                        <div class="key" onclick="addChar('7')">7</div>
+                        <div class="key" onclick="addChar('8')">8</div>
+                        <div class="key" onclick="addChar('9')">9</div>
+                        <div class="key" onclick="addChar('0')">0</div>
+                    </div>
+                    <div class="row">
+                        <div class="key" onclick="addChar('Q')">Q</div>
+                        <div class="key" onclick="addChar('W')">W</div>
+                        <div class="key" onclick="addChar('E')">E</div>
+                        <div class="key" onclick="addChar('R')">R</div>
+                        <div class="key" onclick="addChar('T')">T</div>
+                        <div class="key" onclick="addChar('Y')">Y</div>
+                        <div class="key" onclick="addChar('U')">U</div>
+                        <div class="key" onclick="addChar('I')">I</div>
+                        <div class="key" onclick="addChar('O')">O</div>
+                        <div class="key" onclick="addChar('P')">P</div>
+                    </div>
+                    <div class="row">
+                        <div class="key" onclick="addChar('A')">A</div>
+                        <div class="key" onclick="addChar('S')">S</div>
+                        <div class="key" onclick="addChar('D')">D</div>
+                        <div class="key" onclick="addChar('F')">F</div>
+                        <div class="key" onclick="addChar('G')">G</div>
+                        <div class="key" onclick="addChar('H')">H</div>
+                        <div class="key" onclick="addChar('J')">J</div>
+                        <div class="key" onclick="addChar('K')">K</div>
+                        <div class="key" onclick="addChar('L')">L</div>
+                    </div>
+                    <div class="row">
+                        <div class="key" onclick="addChar('Z')">Z</div>
+                        <div class="key" onclick="addChar('X')">X</div>
+                        <div class="key" onclick="addChar('C')">C</div>
+                        <div class="key" onclick="addChar('V')">V</div>
+                        <div class="key" onclick="addChar('B')">B</div>
+                        <div class="key" onclick="addChar('N')">N</div>
+                        <div class="key" onclick="addChar('M')">M</div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="key" onclick="backspace()">Backspace</div>
+                        <div class="key" onclick="toggleCapsLock()">Caps Lock</div>
+                    </div>
+                </div>
+                <br/>
+                <label for="mobileno" class="label">MOBILE NUMBER</label>
+                <br>
+                <input type="text" id="mobileno" class="input"  placeholder="Enter the Mobile number" />
+                <button  id="mobileNoBtn"  class="icon-btn"><i class="icon fas fa-keyboard"></i></button>
+                <br/>
+                <div class="keyboard" id="virtualKeyboardMobileNo">
+                    <div class="row">
+                        <div class="key" onclick="addChar1('1')">1</div>
+                        <div class="key" onclick="addChar1('2')">2</div>
+                        <div class="key" onclick="addChar1('3')">3</div>
+                    </div>
+                    <div class="row">
+                        <div class="key" onclick="addChar1('4')">4</div>
+                        <div class="key" onclick="addChar1('5')">5</div>
+                        <div class="key" onclick="addChar1('6')">6</div>
+                    </div>
+                    <div class="row">
+                        <div class="key" onclick="addChar1('7')">7</div>
+                        <div class="key" onclick="addChar1('8')">8</div>
+                        <div class="key" onclick="addChar1('9')">9</div>
+                    </div>
+                    <div class="row">
+                        <div class="key" onclick="addChar1('0')">0</div>
+                        <div class="key" onclick="backspace1()">Backspace</div>
+                    </div>
+                    </div>
+               
+                <button class="button" type="submit">submit</button>
+              
+            </form>
+            <p id="formPara" class="form-para"></p>
+
+          
+
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
